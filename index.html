@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReWear — Clothing Exchange Marketplace</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span>♻</span> ReWear</a>
+  <nav>
+    <a href="listings.html">Browse</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="chat.html">Chat</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+  <div class="nav-actions">
+    <span id="navUser"></span>
+    <a class="btn btn-outline" href="login.html" id="loginBtn">Login</a>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">SUSTAINABLE FASHION • SWAP, DON'T SHOP</span>
+    <h1>Give your clothes a <em>second life.</em></h1>
+    <p>Exchange quality clothing with people nearby. No complicated pricing, no unnecessary purchases — just fair swaps and a stronger circular fashion community.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="listings.html">Explore clothing</a>
+      <a class="btn btn-light" href="dashboard.html">List an item</a>
+    </div>
+    <div class="stats">
+      <div><b id="statListings">0</b><span>Active listings</span></div>
+      <div><b id="statSwaps">0</b><span>Successful swaps</span></div>
+      <div><b>4.8/5</b><span>Community rating</span></div>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="floating-card card-a">👕 <span>Fresh finds</span></div>
+    <div class="hanger">♻</div>
+    <div class="floating-card card-b">📍 <span>Swap nearby</span></div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><div><span class="eyebrow">HOW IT WORKS</span><h2>Swap in four simple steps</h2></div></div>
+  <div class="steps">
+    <div class="step"><span>01</span><h3>List</h3><p>Upload your wearable clothes with size, condition and an estimated swap value.</p></div>
+    <div class="step"><span>02</span><h3>Discover</h3><p>Browse realistic listings and filter by category, size and location.</p></div>
+    <div class="step"><span>03</span><h3>Negotiate</h3><p>Send a request and chat directly to agree on a fair exchange.</p></div>
+    <div class="step"><span>04</span><h3>Exchange</h3><p>Meet locally or ship your items and mark the swap complete.</p></div>
+  </div>
+</section>
+<section class="section tinted">
+  <div class="section-head"><div><span class="eyebrow">FEATURED</span><h2>Fresh clothing swaps</h2></div><a href="listings.html" class="text-link">View all →</a></div>
+  <div id="featuredGrid" class="product-grid"></div>
+</section>
+</main>
+<footer><div><b>ReWear</b> — community-powered circular fashion.</div><div>Built for sustainable clothing exchange.</div></footer>
+<script src="app.js"></script>
+<script>renderFeatured(); updateHomeStats();</script>
+</body>
+</html>

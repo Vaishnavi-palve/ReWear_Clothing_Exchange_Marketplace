@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Browse Clothing — ReWear</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">♻ ReWear</a><nav><a class="active" href="listings.html">Browse</a><a href="dashboard.html">Dashboard</a><a href="chat.html">Chat</a><a href="admin.html">Admin</a></nav><div class="nav-actions"><span id="navUser"></span><a class="btn btn-outline" href="login.html" id="loginBtn">Login</a></div></header>
+<main class="page">
+<div class="page-title"><div><span class="eyebrow">MARKETPLACE</span><h1>Find your next swap</h1><p>Browse community-listed clothing and discover fair exchanges.</p></div><a href="dashboard.html" class="btn btn-primary">+ List clothing</a></div>
+<div class="filters">
+<input id="search" placeholder="Search by item, brand or location…" oninput="renderListings()">
+<select id="category" onchange="renderListings()"><option value="">All categories</option><option>Shirt</option><option>Jacket</option><option>Jeans</option><option>Dress</option><option>Sneakers</option><option>Hoodie</option></select>
+<select id="size" onchange="renderListings()"><option value="">All sizes</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<select id="condition" onchange="renderListings()"><option value="">Any condition</option><option>Like New</option><option>Excellent</option><option>Good</option></select>
+</div>
+<div id="listingGrid" class="product-grid"></div></main><footer>ReWear • Exchange clothes, reduce waste.</footer>
+<script src="app.js"></script><script>renderListings();</script></body></html>

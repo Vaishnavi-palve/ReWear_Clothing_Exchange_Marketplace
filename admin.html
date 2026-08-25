@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Panel — ReWear</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">♻ ReWear</a><nav><a href="listings.html">Browse</a><a href="dashboard.html">Dashboard</a><a href="chat.html">Chat</a><a class="active" href="admin.html">Admin</a></nav></header>
+<main class="page"><div class="page-title"><div><span class="eyebrow">ADMINISTRATION</span><h1>Marketplace control center</h1><p>Monitor users, listings, swaps and platform health.</p></div><span class="pill success">System healthy</span></div>
+<div id="adminStats" class="admin-stats"></div>
+<section class="panel"><div class="section-head"><h2>Recent listings</h2><button class="btn btn-outline" onclick="resetDemo()">Reset demo data</button></div><div class="table-wrap"><table><thead><tr><th>Item</th><th>Owner</th><th>Category</th><th>Value</th><th>Status</th><th>Action</th></tr></thead><tbody id="adminTable"></tbody></table></div></section>
+</main><footer>ReWear Admin • Moderation and analytics.</footer><script src="app.js"></script><script>renderAdmin();</script></body></html>
